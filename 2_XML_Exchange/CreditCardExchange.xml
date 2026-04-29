@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CreditCardDataExchange xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <Header>
+        <SourceSystem>
+            <SystemName>CoreBancario_Emisor</SystemName>
+            <Location>Ciudad de Guatemala, Sede Central</Location>
+        </SourceSystem>
+        <TargetSystem>
+            <SystemName>Plataforma_Canjes_Promerica</SystemName>
+            <Location>AWS us-east-1</Location>
+        </TargetSystem>
+        <MessageID>MSG-20231025-A8F9B2</MessageID>
+        <Timestamp>2023-10-25T14:35:00Z</Timestamp>
+    </Header>
+    <Payload>
+        <Customers>
+            <Customer>
+                <UniqueClientID>CLI-10005487</UniqueClientID>
+                <PersonalData>
+                    <FullName>Juan Arturo Pérez Larios</FullName>
+                    <Email>juan.perez@example.com</Email>
+                </PersonalData>
+                <Cards>
+                    <Card>
+                        <EncryptedData xmlns:xenc="http://www.w3.org/2001/04/xmlenc#" Type="http://www.w3.org/2001/04/xmlenc#Element">
+                            <xenc:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes256-cbc" />
+                            <xenc:CipherData>
+                                <xenc:CipherValue>U2FsdGVkX1+zK9j8a0B5l2xW/p3C4y+7A9mNc0Q=</xenc:CipherValue>
+                            </xenc:CipherData>
+                        </EncryptedData>
+                        <CardType>Crédito</CardType>
+                        <Brand>Visa</Brand>
+                        <ProductCode>Premia Oro</ProductCode>
+                        <ExpirationDate>2028-12</ExpirationDate>
+                        <Status>ACTIVE</Status>
+                    </Card>
+                </Cards>
+            </Customer>
+            <Customer>
+                <UniqueClientID>CLI-10009982</UniqueClientID>
+                <PersonalData>
+                    <FullName>María Fernanda Gómez</FullName>
+                    <Email>maria.gomez@example.com</Email>
+                </PersonalData>
+                <Cards>
+                    <Card>
+                        <EncryptedData xmlns:xenc="http://www.w3.org/2001/04/xmlenc#" Type="http://www.w3.org/2001/04/xmlenc#Element">
+                            <xenc:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes256-cbc" />
+                            <xenc:CipherData>
+                                <xenc:CipherValue>U2FsdGVkX1/oQ3m4s1V2c3A9dJkLpQ8vB4nHxK==</xenc:CipherValue>
+                            </xenc:CipherData>
+                        </EncryptedData>
+                        <CardType>Crédito</CardType>
+                        <Brand>Mastercard</Brand>
+                        <ProductCode>Premia Platinum</ProductCode>
+                        <ExpirationDate>2027-05</ExpirationDate>
+                        <Status>ACTIVE</Status>
+                    </Card>
+                </Cards>
+            </Customer>
+        </Customers>
+    </Payload>
+</CreditCardDataExchange>
