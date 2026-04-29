@@ -1,0 +1,7 @@
+C:\Users\erici\OneDrive\Escritorio\PROGRA3\pruebatec\1_PruebaASPX\Prueba1ASPX\obj\Debug\Prueba1ASPX.csproj.AssemblyReference.cache
+C:\Users\erici\OneDrive\Escritorio\PROGRA3\pruebatec\1_PruebaASPX\Prueba1ASPX\obj\Debug\Prueba1ASPX.csproj.CoreCompileInputs.cache
+C:\Users\erici\OneDrive\Escritorio\PROGRA3\pruebatec\1_PruebaASPX\Prueba1ASPX\bin\Prueba1ASPX.dll.config
+C:\Users\erici\OneDrive\Escritorio\PROGRA3\pruebatec\1_PruebaASPX\Prueba1ASPX\bin\Prueba1ASPX.dll
+C:\Users\erici\OneDrive\Escritorio\PROGRA3\pruebatec\1_PruebaASPX\Prueba1ASPX\bin\Prueba1ASPX.pdb
+C:\Users\erici\OneDrive\Escritorio\PROGRA3\pruebatec\1_PruebaASPX\Prueba1ASPX\obj\Debug\Prueba1ASPX.dll
+C:\Users\erici\OneDrive\Escritorio\PROGRA3\pruebatec\1_PruebaASPX\Prueba1ASPX\obj\Debug\Prueba1ASPX.pdb

@@ -20,10 +20,10 @@ Para probar el sistema, utilice los siguientes datos:
 
 ## Cómo Ejecutar el Proyecto
 
-1. Abra la carpeta del proyecto en **Visual Studio 2022** o **VS Code**.
-2. Asegúrese de tener instalado el **SDK de .NET 8**.
-3. Presione **F5** o ejecute el comando `dotnet run` desde la terminal en la ruta del proyecto.
-4. El sistema abrirá automáticamente el navegador en la página de Login.
+1. Abre el archivo **`Prueba1ASPX.csproj`** o la carpeta del proyecto en **Visual Studio 2022**.
+2. Asegúrate de que tu proyecto cargue correctamente (ahora utiliza .NET Framework 4.8).
+3. Presiona **F5** (o haz clic en el botón de Iniciar "IIS Express") para ejecutar el proyecto.
+4. El sistema abrirá automáticamente el navegador en la página `Login.aspx`.
 
 ## Características Visuales
 
