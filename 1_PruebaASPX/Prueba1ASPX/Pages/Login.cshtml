@@ -1,0 +1,93 @@
+@page
+@model Prueba1ASPX.Pages.LoginModel
+@{
+    ViewData["Title"] = "Login";
+}
+
+<div class="login-card p-5">
+    <div class="text-center mb-4">
+        <h2 class="fw-bold text-white">¡Bienvenido!</h2>
+        <p class="text-white-50">Ingresa tus credenciales para continuar</p>
+    </div>
+    
+    <form method="post" onsubmit="return validate()">
+        <div class="form-floating mb-3">
+            <input type="text" asp-for="Username" id="txtUser" class="form-control bg-transparent text-white border-white-50" placeholder="Usuario" />
+            <label class="text-white-50">Usuario</label>
+        </div>
+        <div class="form-floating mb-4">
+            <input type="password" asp-for="Password" id="txtPass" class="form-control bg-transparent text-white border-white-50" placeholder="Contraseña" />
+            <label class="text-white-50">Contraseña</label>
+        </div>
+        
+        <button type="submit" class="btn btn-primary btn-lg w-100 rounded-pill fw-bold shadow-lg">INGRESAR</button>
+        
+        <div id="msg" class="alert alert-danger mt-3 py-2 text-center" style="display:none; font-size: 0.9rem; background: rgba(220, 53, 69, 0.2); border-color: rgba(220, 53, 69, 0.3); color: #ffbaba;"></div>
+        
+        @if (!ViewData.ModelState.IsValid)
+        {
+            <div class="alert alert-danger mt-3 py-2 text-center" style="font-size: 0.9rem; background: rgba(220, 53, 69, 0.2); border-color: rgba(220, 53, 69, 0.3); color: #ffbaba;">
+                @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+                {
+                    <span>@error.ErrorMessage</span>
+                }
+            </div>
+        }
+    </form>
+</div>
+
+<style>
+    .login-card {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 20px;
+        width: 100%;
+        max-width: 420px;
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    }
+    
+    .form-floating > .form-control {
+        border-radius: 10px;
+    }
+    
+    .form-floating > .form-control:focus {
+        background: rgba(255, 255, 255, 0.15);
+        color: white;
+        border-color: #fff;
+        box-shadow: none;
+    }
+    
+    .form-floating > label::after {
+        background-color: transparent !important;
+    }
+    
+    .btn-primary {
+        background: linear-gradient(45deg, #4facfe 0%, #00f2fe 100%);
+        border: none;
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+    
+    .btn-primary:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(79, 172, 254, 0.4);
+        background: linear-gradient(45deg, #4facfe 0%, #00f2fe 100%);
+    }
+</style>
+
+@section Scripts {
+    <script>
+        function validate() {
+            var u = document.getElementById('txtUser').value;
+            var p = document.getElementById('txtPass').value;
+            var e = document.getElementById('msg');
+            if (u.trim() === "" || p.trim() === "") {
+                e.innerText = "⚠️ Por favor, completa todos los campos";
+                e.style.display = "block";
+                return false;
+            }
+            return true;
+        }
+    </script>
+}

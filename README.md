@@ -1,11 +1,32 @@
-# Prueba Técnica
+# Repositorio de Prueba Técnica
 
-Repositorio con la resolución de la prueba técnica estructurada en módulos.
+Este repositorio contiene la resolución integral de la prueba técnica, estructurada en cinco módulos especializados que abarcan desde el desarrollo web hasta el modelado avanzado de bases de datos.
 
-## Estructura del Repositorio
+## Contenido del Repositorio
 
-- **`1_ASP_Login/`**: Página ASPX responsiva para inicio de sesión con validación de lado del cliente y del servidor.
-- **`2_XML_Exchange/`**: Documento XML cifrado bajo el estándar W3C XML Encryption para el intercambio seguro de datos de tarjetas.
-- **`3_SQL_Queries/`**: Consultas SQL utilizando CTEs y Window Functions para extraer información de proyectos y productos.
-- **`4_CSharp_DB/`**: Helper de base de datos en C# implementando `DbProviderFactory` para ejecutar operaciones agnósticas a la base de datos.
-- **`5_ER_Model/`**: Modelo Entidad-Relación y script DDL para el control de inventarios, promociones y canje de puntos.
+A continuación se detallan los módulos incluidos. Cada uno cuenta con su propia documentación detallada y guías de ejecución:
+
+### 1. [Autenticación ASP.NET Core](./1_PruebaASPX/Prueba1ASPX/README.md)
+Desarrollo de un sistema de login moderno utilizando Razor Pages en .NET 8.
+- **Destacado**: Interfaz visual premium con efecto *Glassmorphism* y validaciones integradas.
+
+### 2. [Intercambio de Datos XML](./2_XML_Exchange/README.md)
+Definición de un estándar XML para el intercambio seguro de información financiera.
+- **Destacado**: Estructura en español con campos de contacto detallados y seguridad mediante encriptación.
+
+### 3. [Consultas SQL Avanzadas](./3_SQL_Queries/README.md)
+Solución a problemas complejos de extracción de datos mediante SQL.
+- **Destacado**: Uso de CTEs (`WITH`) para simplificar reportes y scripts de prueba autoejecutables.
+
+### 4. [CRUD en C# (Consola)](./4_CSharp_DB/README.md)
+Aplicación de escritorio (consola) para la gestión de registros de base de datos.
+- **Destacado**: Reutilización de lógica de acceso a datos agnóstica al proveedor y menú interactivo.
+
+### 5. [Modelo Entidad-Relación](./5_ER_Model/README.md)
+Diseño de arquitectura de base de datos para un sistema de canjes e inventarios.
+- **Destacado**: Modelado de promociones segmentadas por sucursal y diagrama técnico en Mermaid.
+
+---
+
+## Cómo Navegar
+Cada carpeta es un proyecto independiente. Para obtener instrucciones específicas sobre cómo ejecutar o probar cada módulo, por favor ingrese a la carpeta correspondiente y lea el archivo **README.md** interno.

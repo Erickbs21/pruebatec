@@ -37,6 +37,11 @@ erDiagram
         int Costo_Puntos
         decimal Precio_Articulo
     }
+
+    PROMOCION_SUCURSAL {
+        int ID_Promocion PK,FK
+        int ID_Sucursal PK,FK
+    }
     
     CLIENTE {
         int ID_Cliente PK
@@ -68,6 +73,9 @@ erDiagram
     
     PROMOCION ||--o{ PROMOCION_ARTICULO : "contiene"
     ARTICULO ||--o{ PROMOCION_ARTICULO : "pertenece a"
+    
+    PROMOCION ||--o{ PROMOCION_SUCURSAL : "aplica en"
+    SUCURSAL ||--o{ PROMOCION_SUCURSAL : "participa en"
     
     CLIENTE ||--o{ CANJE : "realiza"
     SUCURSAL ||--o{ CANJE : "se efectúa en"
