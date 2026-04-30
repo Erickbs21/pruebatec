@@ -6,9 +6,8 @@ Este proyecto implementa un sistema de autenticación utilizando ASP.NET.
 
 ## Archivos Clave
 
-- **`Pages/Login.cshtml`**: Interfaz de usuario para la autenticación con efecto de "Glassmorphism" (cristal esmerilado).
-- **`Pages/Home.cshtml`**: Página de bienvenida personalizada que se muestra tras un acceso exitoso.
-- **`Program.cs`**: Archivo de configuración principal donde se habilita el soporte de sesiones y el enrutamiento.
+- **`Pages/Login.aspx`**: Interfaz de usuario para la autenticación con efecto de "Glassmorphism" (cristal esmerilado).
+- **`Pages/Home.aspx`**: Página de bienvenida personalizada que se muestra tras un acceso exitoso.
 - **`wwwroot/img/`**: Carpeta que contiene la imagen de fondo (`sunset`) utilizada para la estética visual.
 
 ## Credenciales de Prueba
