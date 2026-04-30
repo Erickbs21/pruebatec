@@ -6,9 +6,8 @@ Este repositorio contiene la resolución integral de la prueba técnica, estruct
 
 A continuación se detallan los módulos incluidos. Cada uno cuenta con su propia documentación detallada y guías de ejecución:
 
-### 1. [Autenticación ASP.NET Core](./1_PruebaASPX/Prueba1ASPX/README.md)
-Desarrollo de un sistema de login moderno utilizando Razor Pages en .NET 8.
-- **Destacado**: Interfaz visual premium con efecto *Glassmorphism* y validaciones integradas.
+### 1. [Autenticación ASPX.NET Core](./1_PruebaASPX/Prueba1ASPX/README.md)
+Desarrollo de un sistema de login
 
 ### 2. [Intercambio de Datos XML](./2_XML_Exchange/README.md)
 Definición de un estándar XML para el intercambio seguro de información financiera.
