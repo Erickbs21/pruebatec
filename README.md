@@ -31,7 +31,7 @@ Diseño de arquitectura de base de datos para un sistema de canjes e inventarios
     <img src="https://img.shields.io/badge/Ver%20Diagramas-Mermaid%20ER-success?style=for-the-badge&logo=mermaid" alt="Ver Diagramas">
   </a>
 </p>
- **[Abrir Diagramas ER](./5_ER_Model/ER_Model.md)**
+**[Abrir Diagramas ER](./5_ER_Model/ER_Model.md)**
 
 ---
 
